@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1>
+        PyritePlate
+        <small>or, that shit I keep doing</small>
+      </h1>
+      <p>The boilerplate CSS I normally write and rewrite on my projects, now all together in one shiny spot. Yeeey.</p>
+      <p>If you somehow got here & wanna grab code, bear in mind it's not my cleanest stuff - not fully responsive, lazily done... it's the sort of shit I use on personal projects just for fun.</p>
+      <h2>Containers</h2>
+      <p>There's a <code>.container</code> that's wrapping all this shit.</p>
+<pre data-lang="HTML"><code>&lt;div class="container">
+  Your content here
+&lt;/div></code></pre>
+      <div class="bg-secondary avoid-container">
+        <p>avoiding stuff is my specialty, though. you can do it too:</p>		
+<pre data-lang="HTML"><code>&lt;div class="avoid-container">
+  all the problems that you're avoiding, here!
+&lt;/div></code></pre>
+      </div>
+    
+      <h2>Buttons</h2>
+      <p>For buttons, just use the standard html tag. Add <code>.outline</code>, <code>.primary</code> or <code>.secondary</code> for extra flair. It will be a tad lighter if it's <code>disabled</code>.</p>
+      <p>
+        <button>Learn more</button>
+        <button class="outline">Sign in</button>
+        <button class="outline primary">Sign up</button>
+        <button disabled>can't click me!</button>
+        <button class="outline" disabled>dum dum</button>
+        <button class="outline primary" disabled>dum dum</button>
+        <button class="primary" disabled>dum</button>
+      </p>
+      
+      <h2>Links</h2>
+      <p>URLs like <a href="#">this one</a> will style themselves to be cute.</p>
+      <p>Links with the <code>.button</code> class will be styled as buttons, and will react to the standard button helper classes.</p>
+      <p>
+        <a href="#" class="button">Not a button</a>
+        <a href="#" class="button outline">would've fool'd ya tho</a>
+      </p>
+    
+      <h2>Forms</h2>
+      <p>I don't normally do forms so there's very few shit imma do here.</p>	
+      <div class="control">
+      <label>Name</label>
+      <input placeholder="Enter your whatever">
+    </div>
+      <pre data-lang="HTML"><code>&lt;div class="control">
+      &lt;label>Name&lt;/label>
+      &lt;input placeholder="Enter your whatever">
+    &lt;/div></code></pre>
+      <br>
+      <p>Add the <code>.error</code> class to style shit when users mess up, and use a <code>.message</code> to display any error texts.</p>
+      <div class="control error">
+        <label>E-mail</label>
+        <input placeholder="Enter your whatever" value="something stupid">
+        <span class="message">Something's awfully wrong! >:c</span>
+      </div>
+      <p>Radio button and checkboxes don't need anything fancy, just add a label tag to them.</p>
+      <div class="control">
+        <input type="radio" name="options" id="option-1"><label for="option-1">Option 1</label>
+        <input type="radio" name="options" id="option-2"><label for="option-2">Option 2</label>
+        <input type="radio" name="options" id="option-3"><label for="option-3">Option 3</label>
+      </div>
+      
+      <div class="control">
+        <input type="checkbox" name="moptions" id="moption-1"><label for="moption-1">Multi-Option 1</label>
+        <input type="checkbox" name="moptions" id="moption-2"><label for="moption-2">Multi-Option 2</label>
+        <input type="checkbox" name="moptions" id="moption-3"><label for="moption-3">Multi-Option 3</label>
+      </div>
+      
+      <h2>Grids, ugh</h2>
+      <p>The standard 12 column magic, by the grace of a <code>.grid</code> parent <code>.md#</code> for each cell. Breaks to <code>.sm#</code> at <strong>1024px</strong>, and to <code>.lg#</code> at <strong>2048px</strong>.</p>
+      <p>Use <code>.start#</code>, <code>.sm-start#</code> and <code>.lg-start#</code>  to offset your cells, indicating on which column should your cell start.</p>
+      <div class="grid example">
+        <div class="md2 lg12 bg-primary"><code>.md2.lg12</code></div>
+        <div class="md4 bg-primary"><code>.md4</code></div>
+        <div class="md1 bg-primary"><code>.md1</code></div>
+        <div class="md1 start9 bg-primary"><code>.md1.start9</code></div>
+        <div class="md3 sm6 bg-primary"><code>.md3.sm6</code></div>
+      </div><br>
+<pre data-lang="HTML"><code>&lt;div class="grid example">
+  &lt;div class="md2 lg12">.md2.lg12&lt;/div>
+  &lt;div class="md4">.md4&lt;/div>
+  &lt;div class="md1">.md1&lt;/div>
+  &lt;div class="md1 start9">.md1.start9&lt;/div>
+  &lt;div class="md3 sm6">.md3.sm6&lt;/div>
+&lt;/div></code></pre>
+      
+      <h2>Separator</h2>
+      <p>Sometimes, your content can be really different from other content. Sometimes you wanna split it in sections! Just use the hr HTML tag and you're all set, right?</p>
+      <hr/>
+      <p>That's ok, that's why i tweaked this shit! The <code>data-text</code> attribute will allow you to add some text to it, too.</p>
+      <hr data-text="Don't panic!"/>
+      <p>Breathe in, breathe out, kick someone's ass. Everything's gonna be just ggggggreat.</p>
+      <hr class="primary" data-text="of course,"/>
+      <p>This supports the standard colors</p>
+      <hr class="secondary" data-text="both of them"/>
+<pre data-lang="HTML"><code>&lt;hr class="secondary" data-text="both of them"/></code></pre>
+      
+      <h2>Cards!</h2>
+      <div class="grid">
+        <div class="md4 sm12 card">Finally, <strong class="primary">something cute</strong> for yer beautiful eyes to look at,
+        <hr data-text="fancily supporting"/>
+          the beloved separator!
+        </div>
+        <div class="md4 sm12 card">
+          <div class="title">It can have a title</div>
+          I mean, aside from your regular <strong class="secondary">gorg content</strong>.
+        </div>
+        <div class="md4 sm12 card hoverable">
+          <div class="title">Of course</div>
+          It can be hoverable if you need it to.
+        </div>
+<pre data-lang="HTML" class="md4 sm12"><code>&lt;div class="card">
+  Finally, &lt;strong class="primary">something cute&lt;/strong> for yer beautiful eyes to look at,
+  &lt;hr data-text="fancily supporting"/>
+  the beloved separator!
+&lt;/div></code></pre>
+    
+<pre data-lang="HTML" class="md4 sm12"><code>&lt;div class="card">
+  &lt;div class="title">It can have a title&lt;/div>
+  I mean, aside from your regular &lt;strong class="secondary">gorg content&lt;/strong>.
+&lt;/div></code></pre>
+        
+<pre data-lang="HTML" class="md4 sm12"><code>&lt;div class="card hoverable">
+  &lt;div class="title">Of course&lt;/div>
+  It can be hoverable if you need it to.
+&lt;/div></code></pre>
+      </div>
+      
+      <h2>Tables</h2>
+      <p>Officially going overboard, yeyyy! Just  use the standard HTML stuff, it's been properly styled and cutiefied.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Cool quote</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Color of Magic</td>
+            <td>Terry Pratchett</td>
+            <td>"It is at this point that normal language gives up, and goes and has a drink."</td>
+          </tr>
+          <tr>
+            <td>The Hobbit, or There and Back Again</td>
+            <td>J. R. R. Tolkien</td>
+            <td>"Trolls simply detest the very sight of dwarves (uncooked)."</td>
+          </tr>
+          <tr>
+            <td>Stardust</td>
+            <td>Neil Gaiman</td>
+            <td>"There was a skyness to the sky and a nowness to the world that he had never seen or felt or realized before."</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h2>Pills</h2>
+      <div class="grid">
+        <div class="md6">
+          <p>
+            At any given time you can bet I'm thinking about why pills are such a cute concept.
+          </p>
+          <div class="pill primary">prescription</div>
+          <div class="pill secondary">only</div>
+          <div class="pill">pills</div>
+        </div>
+        <div class="md6">
+<pre data-lang="HTML" class="md4 sm12"><code>&lt;div class="pill primary">prescription&lt;/div>
+&lt;div class="pill secondary">only&lt;/div>
+&lt;div class="pill">pills&lt;/div></code></pre>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+html { font-size: 10px; }
+
+:root {
+	--lighter-gray: #f0f0f0;
+  --light-gray: lightgray;
+	--gray: darkgray;
+	--dark-gray: gray;
+	--darker-gray: dimgray;
+	--black: #222;
+	--light-primary: #f4edfc;
+	--primary: #e6d7f7;
+	--dark-primary: #8c5ac4;
+	--light-secondary: #e0fcff;
+	--secondary: #bee8ed;
+	--dark-secondary: #53aab5;
+	--error: indianred;
+	--radius: 0.4rem;
+	--gap-xs: .8rem;
+	--gap-sm: 1.2rem;
+	--gap-md: 1.6rem;
+	--gap-lg: 2rem;
+	--font-sm: 1.2rem;
+	--font-md: 1.4rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: Barlow, sans serif;
+	font-size: var(--font-md);
+	color: var(--black);
+	overflow-x: hidden;
+}
+
+/* === titles === */
+h1, h2, h3, h4 {
+	padding: var(--gap-sm) 0 var(--gap-sm) 0;
+}
+
+h1 > small, h2 > small, h3 > small, h4 > small {
+	display: block;
+	color: var(--dark-gray);
+	font-weight: 500;
+}
+
+
+/* === basic helpers === */
+.primary { color: var(--dark-primary); }
+.secondary { color: var(--dark-secondary); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+
+
+/* === links === */
+a {
+	color: var(--darker-gray);
+	font-weight: 500;
+	transition: 0.2s;
+}
+
+a:hover {
+	color: var(--dark-primary);
+	transition: 0.2s;
+}

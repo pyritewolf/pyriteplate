@@ -1,0 +1,40 @@
+/* === code === */
+code {
+	background-color: var(--lighter-gray);
+	padding:var(--radius);
+	border-radius: var(--radius);
+	font-size: var(--font-sm);
+	white-space: break-spaces;
+}
+
+pre {
+	background-color: var(--lighter-gray);
+	border-radius: var(--radius);
+	padding: var(--gap-sm);
+}
+
+pre[data-lang] { position: relative; }
+
+pre[data-lang]:before {
+	content: attr(data-lang);
+	position: absolute;
+	right: var(--radius);
+	bottom: var(--radius);
+	padding: var(--radius);
+	border-radius: var(--radius);
+	background-color: var(--darker-gray);
+	color: white;
+	font-size: var(--font-sm);
+	transition: 0.2s;
+}
+
+pre[data-lang]:hover:before {
+	bottom: calc(var(--radius) + 2px);
+	right: calc(var(--radius) + 2px);
+	box-shadow: 2px 2px 0 var(--dark-secondary);
+	transition: 0.2s;
+}
+
+pre code {
+  background: transparent;
+}

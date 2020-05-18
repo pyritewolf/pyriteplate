@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+@import 'styles/boilerplate.css';
+@import 'styles/wrappers.css';
+@import 'styles/buttons.css';
+@import 'styles/forms.css';
+@import 'styles/grid.css';
+@import 'styles/separator.css';
+@import 'styles/cards.css';
+@import 'styles/tables.css';
+@import 'styles/code.css';
+@import 'styles/pills.css';
+
+/* === example only stuff === */
+.example > * {
+	text-align: center;
+	border-radius: var(--radius);
+	padding: var(--gap-sm) var(--gap-xs);
+}

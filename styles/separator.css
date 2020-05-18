@@ -1,0 +1,35 @@
+/* === separator === */
+hr {
+	border: none;
+	display: flex;
+	align-items: center;
+	height: 1px;
+	justify-content: center;
+	background-color: var(--light-gray);
+	margin: var(--gap-sm) 0;
+	overflow: visible;
+	text-align: center;
+}
+
+hr[data-text] { margin: var(--gap-lg) 0; }
+
+hr[data-text]:before {
+	content: attr(data-text);
+	display: block;
+	border-radius: calc(3 * var(--radius));
+	border: 1px solid var(--light-gray);
+	font-size: var(--font-sm);
+	padding: var(--radius) var(--gap-sm);
+	background-color: white;
+	font-weight: 500;
+}
+
+hr.primary[data-text]:before {
+	border-color: var(--dark-primary);
+	background-color: var(--light-primary);
+}
+
+hr.secondary[data-text]:before {
+	border-color: var(--dark-secondary);
+	background-color: var(--light-secondary);
+}

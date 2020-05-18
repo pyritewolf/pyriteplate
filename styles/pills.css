@@ -1,0 +1,14 @@
+/* === pills === */
+.pill {
+  display: inline-block;
+  background-color: var(--lighter-gray);
+  padding: var(--radius) var(--gap-xs);
+  border-radius: var(--gap-sm);
+  font-size: var(--font-sm);
+  font-weight: 500;
+}
+
+.pill.primary { background-color: var(--light-primary); }
+.pill.secondary { background-color: var(--light-secondary); }
+
+.pill:not(:last-child) { margin-right: var(--radius) }

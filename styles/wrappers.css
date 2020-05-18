@@ -1,0 +1,15 @@
+/* === wrappers === */
+.container {
+	max-width: 1024px;
+	margin: auto;
+	padding: var(--gap-md);
+}
+
+.container p:not(:last-child) {
+	padding-bottom: var(--gap-sm);
+}
+
+.avoid-container {
+  margin: var(--gap-sm) -50%;
+	padding: var(--gap-md) 50%;
+}
