@@ -19,6 +19,7 @@ html { font-size: 10px; }
 	--gap-sm: 1.2rem;
 	--gap-md: 1.6rem;
 	--gap-lg: 2rem;
+	--font-xs: 1rem;
 	--font-sm: 1.2rem;
 	--font-md: 1.4rem;
 }
@@ -39,12 +40,18 @@ body {
 /* === titles === */
 h1, h2, h3, h4 {
 	padding: var(--gap-sm) 0 var(--gap-sm) 0;
+	display: flex;
+	align-items: center;
 }
 
 h1 > small, h2 > small, h3 > small, h4 > small {
 	display: block;
 	color: var(--dark-gray);
 	font-weight: 500;
+}
+
+h1 > *, h2 > *, h3 > *, h4 > * {
+	margin-left: var(--gap-sm);
 }
 
 
