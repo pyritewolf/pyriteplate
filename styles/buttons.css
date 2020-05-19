@@ -64,3 +64,9 @@ button.primary.outline, .button.primary.outline {
 button.primary.outline:hover:not(:disabled), .button.primary.outline:hover {
 	box-shadow: 0 3px 0 var(--dark-primary);
 }
+
+button.sm, .button.sm {
+	font-size: var(--font-xs);
+	padding: var(--radius) var(--gap-xs);
+	letter-spacing: 1px;
+}
