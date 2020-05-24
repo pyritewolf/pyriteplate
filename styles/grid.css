@@ -20,11 +20,11 @@
 .grid > .md5 { grid-column-start: span 5; }
 .grid > .md6 { grid-column-start: span 6; }
 .grid > .md7 { grid-column-start: span 7; }
-.grid > .md8 { grid-column-start: span 1; }
-.grid > .md9 { grid-column-start: span 1; }
-.grid > .md10 { grid-column-start: span 1; }
-.grid > .md11 { grid-column-start: span 1; }
-.grid > .md12 { grid-column-start: span 1; }
+.grid > .md8 { grid-column-start: span 8; }
+.grid > .md9 { grid-column-start: span 9; }
+.grid > .md10 { grid-column-start: span 10; }
+.grid > .md11 { grid-column-start: span 11; }
+.grid > .md12 { grid-column-start: span 12; }
 .grid > .start1 { grid-column-start: 1; }
 .grid > .start2 { grid-column-start: 2; }
 .grid > .start3 { grid-column-start: 3; }
