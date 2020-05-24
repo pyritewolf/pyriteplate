@@ -1,10 +1,11 @@
 
 /* === forms === */
-input:not([type="radio"]):not([type="checkbox"]), textarea {
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
 	display: block;
 	width: 100%;
 	border: 1px solid var(--lighter-gray);
 	outline: 0;
+	background-color: white;
 	padding: var(--gap-xs) var(--gap-sm);
 	border-radius: var(--radius);
 	font-family: Barlow, sans serif;
@@ -13,7 +14,7 @@ input:not([type="radio"]):not([type="checkbox"]), textarea {
 	transition: 0.2s;
 }
 
-input:not([type="radio"]):not([type="checkbox"]):hover, textarea:hover {
+input:not([type="radio"]):not([type="checkbox"]):hover, textarea:hover, select:hover {
 	border-color: var(--light-gray);
 	box-shadow: 0 1px 0 var(--light-gray);
 	transition: 0.2s;
@@ -42,7 +43,7 @@ input:not([type="radio"]):not([type="checkbox"]):hover, textarea:hover {
 	transition: 0.2s;
 }
 
-input:not([type="radio"]):not([type="checkbox"]):focus, textarea:focus {
+input:not([type="radio"]):not([type="checkbox"]):focus, textarea:focus, select:focus {
 	border-color: var(--primary);
 	box-shadow: 0 2px 0 var(--primary);
 	transition: 0.2s;
@@ -116,4 +117,13 @@ input[type="checkbox"] + label {
 	align-items: center;
 	cursor: pointer;
 	margin-right: var(--gap-sm);
+}
+
+select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+		appearance: none;
+		background-position: center right;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='17px' width='15px'%3E%3Ctext x='0' y='10' fill='gray'%3E%CB%AC%3C/text%3E%3C/svg%3E");
 }
