@@ -36,5 +36,6 @@ pre[data-lang]:hover:before {
 }
 
 pre code {
-  background: transparent;
+	background: transparent;
+	padding: 0;
 }
