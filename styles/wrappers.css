@@ -2,7 +2,7 @@
 .container {
 	max-width: 1024px;
 	margin: auto;
-	padding: var(--gap-md);
+	padding: var(--gap-lg);
 }
 
 .container p:not(:last-child) {
@@ -12,4 +12,9 @@
 .avoid-container {
   margin: var(--gap-sm) -50%;
 	padding: var(--gap-md) 50%;
+}
+
+.container > .avoid-container:last-child {
+	margin-top: var(--gap-lg);
+	margin-bottom: calc(var(--gap-lg) * -1);
 }
