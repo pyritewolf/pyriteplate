@@ -6,6 +6,7 @@
   border-radius: var(--gap-sm);
   font-size: var(--font-sm);
   font-weight: 500;
+  cursor: default;
 }
 
 .pill.primary { background-color: var(--light-primary); }
