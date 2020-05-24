@@ -22,6 +22,7 @@ html { font-size: 10px; }
 	--font-xs: 1rem;
 	--font-sm: 1.2rem;
 	--font-md: 1.4rem;
+	--font-lg: 1.8rem;
 }
 
 * {
@@ -60,6 +61,10 @@ h1 > *, h2 > *, h3 > *, h4 > * {
 .secondary { color: var(--dark-secondary); }
 .bg-primary { background-color: var(--primary); }
 .bg-secondary { background-color: var(--secondary); }
+.bg-black {
+	background-color: var(--darker-gray);
+	color: white;
+}
 
 
 /* === links === */
