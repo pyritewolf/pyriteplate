@@ -18,3 +18,8 @@
 	margin-top: var(--gap-lg);
 	margin-bottom: calc(var(--gap-lg) * -1);
 }
+
+.container > .avoid-container:first-child {
+	margin-top: calc(var(--gap-lg) * -1);
+	margin-bottom: var(--gap-lg);
+}
