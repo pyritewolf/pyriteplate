@@ -50,11 +50,11 @@ footer > p {
 }
 
 .hero h1 {
-	text-shadow: 3px 3px 0 var(--dark-primary);
+	text-shadow: 1px 1px 0 var(--dark-primary);
 	transition: 0.2s;
 }
 
 .hero:hover h1 {
-	text-shadow: 3px 3px 0 var(--dark-secondary);
+	text-shadow:  2px 2px 0 var(--dark-primary), -2px -2px 0 var(--dark-secondary);
 	transition: 0.2s;
 }
