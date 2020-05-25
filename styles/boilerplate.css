@@ -38,6 +38,11 @@ body {
 	overflow-x: hidden;
 }
 
+::selection {
+	background-color: var(--dark-primary);
+	color: white;
+}
+
 /* === titles === */
 h1, h2, h3, h4 {
 	padding: var(--gap-sm) 0 var(--gap-sm) 0;
@@ -64,17 +69,4 @@ h1 > *, h2 > *, h3 > *, h4 > * {
 .bg-black {
 	background-color: var(--darker-gray);
 	color: white;
-}
-
-
-/* === links === */
-a {
-	color: var(--darker-gray);
-	font-weight: 500;
-	transition: 0.2s;
-}
-
-a:hover {
-	color: var(--dark-primary);
-	transition: 0.2s;
 }

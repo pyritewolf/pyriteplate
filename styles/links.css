@@ -1,0 +1,11 @@
+/* === links === */
+a {
+	color: var(--darker-gray);
+	font-weight: 500;
+	transition: 0.2s;
+}
+
+a:hover {
+	color: var(--dark-primary);
+	transition: 0.2s;
+}

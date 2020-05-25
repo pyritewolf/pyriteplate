@@ -16,6 +16,10 @@
         <p>The boilerplate CSS I normally write and rewrite on my projects, now all together in one shiny spot. Yeeey.</p>
         <p>If you somehow got here & wanna grab code, bear in mind it's not my cleanest stuff - not fully responsive, lazily done... it's the sort of shit I use on personal projects just for fun.</p>
       </div>
+      <h2>The boilerplate's boilerplate <button class="sm" onclick="copyCSS(this, 'boilerplate')">Copy CSS</button></h2>
+      <p>This CSS sets up the basic variables for color, spacing & sizing, plus a couple of helpers like <code>.primary</code> & <code>.secondary</code> that make your <span class="primary">text go all funny</span>.</p>
+      <p>You also get <code>.bg-primary</code>, <code>.bg-secondary</code> & <code>.bg-gray</code> that make your <span class="bg-primary">backgrounds be super cool</span>.</p>
+      <hr/>
       <h2>Containers <button class="sm" onclick="copyCSS(this, 'wrappers')">Copy CSS</button></h2>
       <p>There's a <code>.container</code> that's wrapping all this shit.</p>
 <pre data-lang="HTML"><code>&lt;div class="container">
@@ -41,15 +45,15 @@
         <button class="primary" disabled>dum</button>
         <button class="sm primary">tiny babe</button>
       </p>
-      
-      <h2>Links</h2>
+      <hr/>
+      <h2>Links  <button class="sm" onclick="copyCSS(this, 'links')">Copy CSS</button></h2>
       <p>URLs like <a href="#">this one</a> will style themselves to be cute.</p>
       <p>Links with the <code>.button</code> class will be styled as buttons, and will react to the standard button helper classes.</p>
       <p>
         <a href="#" class="button">Not a button</a>
         <a href="#" class="button outline">would've fool'd ya tho</a>
       </p>
-    
+      <hr/>
       <h2>Forms <button class="sm" onclick="copyCSS(this, 'forms')">Copy CSS</button></h2>
       <p>I don't normally do forms so there's very few shit imma do here.</p>	
       <div class="control">
@@ -92,7 +96,7 @@
           <option>Not at all</option>
         </select>
       </div>
-
+      <hr/>
       <h2>Grids, ugh <button class="sm" onclick="copyCSS(this, 'grid')">Copy CSS</button></h2>
       <p>The standard 12 column magic, by the grace of a <code>.grid</code> parent <code>.md#</code> for each cell. Breaks to <code>.sm#</code> at <strong>1024px</strong>, and to <code>.lg#</code> at <strong>2048px</strong>.</p>
       <p>Use <code>.start#</code>, <code>.sm-start#</code> and <code>.lg-start#</code>  to offset your cells, indicating on which column should your cell start.</p>
@@ -110,7 +114,7 @@
   &lt;div class="md1 start9">.md1.start9&lt;/div>
   &lt;div class="md3 sm6">.md3.sm6&lt;/div>
 &lt;/div></code></pre>
-      
+      <hr/>
       <h2>Separator <button class="sm" onclick="copyCSS(this, 'separator')">Copy CSS</button></h2>
       <p>Sometimes, your content can be really different from other content. Sometimes you wanna split it in sections! Just use the hr HTML tag and you're all set, right?</p>
       <hr/>
@@ -121,7 +125,7 @@
       <p>This supports the standard colors</p>
       <hr class="secondary" data-text="both of them"/>
 <pre data-lang="HTML"><code>&lt;hr class="secondary" data-text="both of them"/></code></pre>
-      
+      <hr/>
       <h2>Cards! <button class="sm" onclick="copyCSS(this, 'cards')">Copy CSS</button></h2>
       <div class="grid">
         <div class="md4 sm12 card">Finally, <strong class="primary">something cute</strong> for yer beautiful eyes to look at,
@@ -152,6 +156,7 @@
   It can be hoverable if you need it to.
 &lt;/div></code></pre>
       </div>
+      <hr/>
       
       <h2>Tables <button class="sm" onclick="copyCSS(this, 'tables')">Copy CSS</button></h2>
       <p>Officially going overboard, yeyyy! Just  use the standard HTML stuff, it's been properly styled and cutiefied.</p>
@@ -181,6 +186,7 @@
           </tr>
         </tbody>
       </table>
+      <hr/>
       
       <h2>Pills <button class="sm" onclick="copyCSS(this, 'pills')">Copy CSS</button></h2>
       <div class="grid">
