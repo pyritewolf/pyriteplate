@@ -25,7 +25,7 @@ input:not([type="radio"]):not([type="checkbox"]):hover, textarea:hover, select:h
 }
 
 .control label {
-	display: block;
+	display: inline-block;
 	padding: 0 0 var(--gap-xs) var(--gap-xs);
 	font-size: var(--font-sm);
 	text-transform: uppercase;
@@ -33,8 +33,25 @@ input:not([type="radio"]):not([type="checkbox"]):hover, textarea:hover, select:h
 	font-weight: 500;
 }
 
+.error {
+	position: relative;
+}
+
 .error input:not([type="radio"]):not([type="checkbox"]) {
 	border-color: var(--error);
+}
+
+.error .message:before {
+	margin-right: var(--gap-xs);
+	content: "!";
+	color: white;
+	background-color: var(--error);
+	width: var(--gap-md);
+	height: var(--gap-md);
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
 }
 
 .error input:not([type="radio"]):not([type="checkbox"]):hover {
@@ -125,5 +142,5 @@ select {
 		appearance: none;
 		background-position: center right;
 		background-repeat: no-repeat;
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='17px' width='15px'%3E%3Ctext x='0' y='10' fill='gray'%3E%CB%AC%3C/text%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='12px' width='20px'%3E%3Ctext x='0' y='10' fill='gray'%3E%E2%96%BC%3C/text%3E%3C/svg%3E");
 }
