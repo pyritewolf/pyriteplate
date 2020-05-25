@@ -32,9 +32,7 @@ footer > p {
 
 .hero {
 	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 	min-height: 500px;
 	font-size: 2rem;
 	position: relative;

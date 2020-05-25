@@ -66,6 +66,8 @@ h1 > *, h2 > *, h3 > *, h4 > * {
 	margin-left: var(--gap-sm);
 }
 
+img { max-width: 100%; }
+
 
 /* === basic helpers === */
 .primary { color: var(--dark-primary); }
