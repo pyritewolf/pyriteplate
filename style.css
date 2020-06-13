@@ -66,3 +66,54 @@ footer > p {
 	50% { background-position: 100% 50%; }
 	100% { background-position: 0% 50%; }
 }
+
+a[name] {
+	position: relative;
+	top: -1.6rem;
+}
+
+.outside {
+	position: sticky;
+	top: var(--gap-lg);
+	left: 0;
+	margin-left: calc(100% + var(--gap-md));
+	z-index: 1;
+	height: 0;
+}
+
+nav {
+	background-color: var(--lighter-gray);
+	width: 200px;
+	padding: var(--gap-xs);
+	border-radius: var(--radius);
+  transition: 0.2s;
+}
+
+nav.avoid-container {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+nav.avoid-container + .avoid-container {
+  margin-top: 0;
+}
+
+nav a {
+  display: block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+	text-decoration: none;
+	padding: var(--gap-xs);
+	border-bottom: 1px solid var(--light-gray);
+}
+nav a:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+@media (max-width: 1424px) {
+	nav {
+		opacity: 0;
+		transition: 0.2s;
+	}
+}
