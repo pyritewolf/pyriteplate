@@ -38,11 +38,14 @@ button:disabled {
 }
 
 button.outline, .button.outline {
+	position: relative;
+	top: 0;
 	border: 1px solid var(--darker-gray);
 	box-shadow: 0 2px 0 var(--darker-gray);
 }
 
 button.outline:hover:not(:disabled), .button.outline:hover {
+	top: -1px;
 	border-color: var(--dark-gray);
 	box-shadow: 0 3px 0 var(--darker-gray);
 }
