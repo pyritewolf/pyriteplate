@@ -50,10 +50,11 @@ h1, h2, h3, h4 {
 	align-items: center;
 }
 
-h1 > small, h2 > small, h3 > small, h4 > small {
+h1 + small, h2 + small, h3 + small, h4 + small {
 	display: block;
 	color: var(--dark-gray);
 	font-weight: 500;
+	padding-bottom: var(--gap-sm); 
 }
 
 @media (max-width: 1024px) {

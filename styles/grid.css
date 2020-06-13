@@ -13,7 +13,7 @@
 	grid-column-end: auto;
 }
 
-.grid > .md1{ grid-column-start: span 1; }
+.grid > .md1 { grid-column-start: span 1; }
 .grid > .md2 { grid-column-start: span 2; }
 .grid > .md3 { grid-column-start: span 3; }
 .grid > .md4 { grid-column-start: span 4; }
