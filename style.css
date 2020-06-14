@@ -82,11 +82,7 @@ a[name] {
 }
 
 nav {
-	background-color: var(--lighter-gray);
 	width: 200px;
-	padding: var(--gap-xs);
-	border-radius: var(--radius);
-  transition: 0.2s;
 }
 
 nav.avoid-container {
@@ -99,16 +95,25 @@ nav.avoid-container + .avoid-container {
 }
 
 nav a {
-  display: block;
+	display: block;
+	position: relative;
+	border-radius: var(--radius);
+	margin-bottom: var(--gap-xs);
+	background-color: var(--lighter-gray);
   letter-spacing: 1px;
   text-transform: uppercase;
 	text-decoration: none;
 	padding: var(--gap-xs);
-	border-bottom: 1px solid var(--light-gray);
+	transition: 0.2s;
 }
 nav a:last-child {
 	margin-bottom: 0;
-	border-bottom: none;
+}
+
+nav a[data-selected="true"] {
+	box-shadow: 2px 2px 0 var(--dark-primary);
+	top: -2px;
+	left: -2px;
 }
 
 @media (max-width: 1424px) {
